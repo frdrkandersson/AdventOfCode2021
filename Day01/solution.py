@@ -24,7 +24,7 @@ def part2(ints):
         if i-2 >= 0:
             d[i-2] += val        
   d.popitem()
-  d.popitem()  
+  d.popitem()    
   return part1(list(d.values()))
 
 print(part1(data_ints))  

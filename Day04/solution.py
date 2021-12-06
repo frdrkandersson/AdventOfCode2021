@@ -65,25 +65,6 @@ def part2(inputs):
     if winners == num_grids:
       return CountSum(grid) * lastvalue    
   return -1
-  # winners = list([])
-  # lastVal = 0
-  # grids = getBoardGrids()
-  # g = grids[:]
-  # for val in inputs:
-  #   print(val)  
-  #   #print(len(grids))      
-  #   for grid in g:      
-  #     print(f"{grid}")
-  #     if val in grid:  
-  #       i = grid.index(val)              
-  #       grid[i] = 'x'        
-  #       if HasWon(grid):
-  #         grids.remove(grid)          
-  #         winners.append(grid.copy())                                    
-  #         lastVal = int(val)                    
-  # #print(winners[-1])          
-  # # print(lastVal)
-  # return CountSum(winners[-1]) * lastVal                      
-
+  
 print(part1(inputs))  
 print(part2(inputs)) 
